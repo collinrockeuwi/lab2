@@ -1,0 +1,13 @@
+# Target labels
+ mconf-idf
+# Source files and their labels
+C:/msys32/home/colli/esp/lab2_q4/build/CMakeFiles/mconf-idf
+C:/msys32/home/colli/esp/lab2_q4/build/CMakeFiles/mconf-idf.rule
+C:/msys32/home/colli/esp/lab2_q4/build/CMakeFiles/mconf-idf-complete.rule
+C:/msys32/home/colli/esp/lab2_q4/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-install.rule
+C:/msys32/home/colli/esp/lab2_q4/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-mkdir.rule
+C:/msys32/home/colli/esp/lab2_q4/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-download.rule
+C:/msys32/home/colli/esp/lab2_q4/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-update.rule
+C:/msys32/home/colli/esp/lab2_q4/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-patch.rule
+C:/msys32/home/colli/esp/lab2_q4/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-configure.rule
+C:/msys32/home/colli/esp/lab2_q4/build/mconf-idf-prefix/src/mconf-idf-stamp/mconf-idf-build.rule
