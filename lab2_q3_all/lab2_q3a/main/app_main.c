@@ -28,7 +28,7 @@ static inline void led_on(void)  { gpio_set_level(LED_PIN, 1); }
 static inline void led_off(void) { gpio_set_level(LED_PIN, 0); }
 
 /* T1: LED ON, actively wait 0.5 s (per spec), then block 1 tick so lower
-   priorities run. We DO NOT hold the mutex during the wait. */
+   priorities run. */
 static void task_led_on(void *arg) {
     (void)arg;
     const TickType_t half_sec = pdMS_TO_TICKS(500);
@@ -43,13 +43,13 @@ static void task_led_on(void *arg) {
         ESP_LOGI(TAG, "T1: LED ON (busy-wait 500 ms)");
         xSemaphoreGive(g_ledMutex);
 
-        /* active wait 500 ms (as required), but WITHOUT the mutex */
+     
         TickType_t start = xTaskGetTickCount();
         while ((xTaskGetTickCount() - start) < half_sec) {
             /* spin */
         }
 
-        /* IMPORTANT: actually BLOCK at least one tick so T2/T3 can run */
+        
         vTaskDelay(1);
     }
 }
